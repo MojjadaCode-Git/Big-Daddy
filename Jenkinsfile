@@ -18,7 +18,7 @@ pipeline {
             }
         }
 
-        stage('Deploy to Tomcat') {
+           stage('Deploy to Tomcat') {
             steps {
                 deploy adapters: [
                     tomcat9(
