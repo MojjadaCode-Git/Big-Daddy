@@ -1,71 +1,71 @@
-
-
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI + DevOps in Cloud</title>
-<style>
-  /* Full-screen body */
-  body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
-    font-family: 'Arial', sans-serif;
-  }
-
-  /* Center container */
-  #container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    color: white;
-    font-size: 3rem;
-    font-weight: bold;
-    transition: all 0.5s ease;
-  }
-
-  /* Highlighted text style */
-  #highlight-text {
-    padding: 20px 40px;
-    border-radius: 15px;
-    background: rgba(255,255,255,0.2);
-    box-shadow: 0 0 30px rgba(255,255,255,0.3);
-    animation: pulse 2s infinite alternate;
-  }
-
-  /* Text glowing animation */
-  @keyframes pulse {
-    0% { text-shadow: 0 0 10px #00f, 0 0 20px #0ff; }
-    50% { text-shadow: 0 0 20px #ff0, 0 0 40px #f0f; }
-    100% { text-shadow: 0 0 30px #0f0, 0 0 60px #0ff; }
-  }
-</style>
+    <title>Deployment Success - GenAI Styled</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .glow-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.6),
+                        0 0 50px rgba(0, 255, 255, 0.4),
+                        0 0 75px rgba(0, 255, 255, 0.2);
+            animation: pulse 3s infinite alternate;
+        }
+        h1 {
+            font-size: 32px;
+            color: #00e5ff;
+            text-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff, 0 0 30px #00e5ff;
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        .highlight {
+            color: #ffea00;
+            font-weight: bold;
+            text-shadow: 0 0 10px #ffea00, 0 0 20px #ffea00;
+        }
+        .contact {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #00ff99;
+            text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99;
+        }
+        @keyframes pulse {
+            from { box-shadow: 0 0 25px rgba(0, 255, 255, 0.6); }
+            to { box-shadow: 0 0 60px rgba(0, 255, 255, 1); }
+        }
+    </style>
 </head>
 <body>
-<div id="container">
-    <h1 id="highlight-text">AI with DevOps in Cloud</h1>
-</div>
-<script>
-  // Animated colorful background
-  const colors = ['#ff5f6d', '#ffc371', '#00f', '#0ff', '#f0f', '#0f0', '#ff00ff', '#00ffff'];
-  let i = 0;
-  const container = document.getElementById('container');
-
-  function changeBackground() {
-      container.style.background = `linear-gradient(135deg, ${colors[i]}, ${colors[(i+1)%colors.length]})`;
-      i = (i + 1) % colors.length;
-  }
-
-  // Change background every 2 seconds
-  setInterval(changeBackground, 2000);
-
-  // Initial background
-  changeBackground();
-</script>
+    <div class="glow-box">
+        <h1>✨ Deployment Success ✨</h1>
+        <p>
+            This is implemented and built in <span class="highlight">Windows Operations</span> <br>
+            with <span class="highlight">Oracle Java 1.8.0_461</span> <br>
+            and <span class="highlight">Maven 3.9.11</span> <br>
+            The artifact is deployed in <span class="highlight">Apache Tomcat</span>. <br><br>
+            ✅ <span class="highlight">This is the output you are reading now.</span><br>
+            🎉 Thank You 🎉
+        </p>
+        <div class="contact">
+            <strong>Saikumar Mojjada</strong><br>
+            📞 7799329181
+        </div>
+    </div>
 </body>
 </html>
